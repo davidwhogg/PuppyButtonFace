@@ -1,5 +1,5 @@
-PuppyCrustFace
-==============
+PuppyButtonFace
+===============
 
 Replacing numerical database keys with human-memorable noun lists.
 

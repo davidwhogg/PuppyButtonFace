@@ -3,7 +3,7 @@ PuppyButtonFace
 
 Replacing numerical database keys with human-memorable noun lists.
 
-Inspired by [correcthorsebatterystaple](http://xkcd.com/936/)
+Inspired by [correcthorsebatterystaple](http://xkcd.com/936/).
 
 Authors
 -------

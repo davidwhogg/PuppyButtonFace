@@ -9,7 +9,7 @@ Authors
 -------
 * Foreman-Mackey
 * Hogg
-* Mostet
+* Montet
 
 License
 -------

@@ -3,3 +3,4 @@ numpy==1.7.1
 PyYAML==3.10
 nltk==2.0.4
 beautifulsoup4==4.2.1
+redis==2.7.6

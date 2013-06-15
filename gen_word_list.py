@@ -39,14 +39,14 @@ def run_one(*args):
     for el in tree.find(id="mw-content-text").find_all("p"):
         for s in tokenizer.tokenize(el.text):
             for t in nltk.pos_tag(nltk.word_tokenize(s)):
-                if t[1][0] == "N":
+                if t[1][0] == "N" and t[1][-1] != "P":
                     w = re.sub(r"[0-9,.;?\[\]\(\)]", "", t[0].lower())
-                    if len(w) > 1:
+                    if len(w) > 2:
                         pipe.zincrby("puppy:words", w, 1)
     pipe.execute()
 
 
 if __name__ == "__main__":
     pool = Pool()
-    while True:
-        pool.map(run_one, range(10 * pool._processes))
+    for i in range(1024):
+        pool.map(run_one, range(128 * pool._processes))
